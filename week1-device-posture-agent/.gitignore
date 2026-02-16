@@ -1,0 +1,26 @@
+# Go build artifacts
+agent/agent
+agent/device-posture-agent
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Python
+collector-api/__pycache__/
+collector-api/*.pyc
+collector-api/.pytest_cache/
+collector-api/venv/
+collector-api/.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
