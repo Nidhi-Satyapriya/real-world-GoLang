@@ -33,6 +33,22 @@ An HTTP proxy that filters web traffic based on dynamic blocklists.
 
 📁 [View Project →](week2-secure-web-gateway/)
 
+### Week 3: Zero Trust Access (ZTNA)
+
+**Theme:** "Never Trust, Always Verify"  
+**Goal:** Authentication, JWTs, and tying the Control Plane to the Data Plane
+
+A Zero Trust Enforcer gateway that validates JWT tokens and enforces role-based access to protected resources.
+
+- ✅ JWT validation middleware (HMAC-SHA256 signature verification)
+- ✅ Middleware chaining (AccessLogger → RequestTimeout → JWTAuth)
+- ✅ Context-based request timeouts and claim propagation
+- ✅ Role-based access control (admin allowed, guest denied)
+- ✅ FastAPI Identity Provider for token issuance
+- ✅ Structured access logging (user, timestamp, success/fail)
+
+📁 [View Project →](week3-ztna/)
+
 ## 🚀 Quick Start
 
 ### Prerequisites
@@ -59,6 +75,10 @@ make help
 # Week 2: Secure Web Gateway
 cd week2-secure-web-gateway
 make help
+
+# Week 3: Zero Trust Access
+cd week3-ztna
+cat README.md
 ```
 
 ## 🎓 Learning Path
@@ -67,6 +87,7 @@ make help
 |------|---------|--------------|------------|
 | 1 | Device Posture Agent | Structs, JSON, HTTP Client | ⭐⭐ Beginner |
 | 2 | Secure Web Gateway | Concurrency, Middleware, Maps | ⭐⭐⭐ Intermediate |
+| 3 | Zero Trust Access | Middleware Chaining, Context, JWTs | ⭐⭐⭐ Intermediate |
 
 ## 📖 Resources
 
